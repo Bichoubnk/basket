@@ -1,0 +1,92 @@
+body{
+background-image: url("bas.webp");
+background-size: cover;
+}
+.container {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    width: 70%;
+    background-color: #001b4e;
+    border-radius: 10px;
+    position: relative;
+}
+#score1, #score2 {
+font-family: 'DSEG7 Classic', monospace;
+  font-size: 80px;
+  color: #ff2a2a;
+  background-color: #111;
+  padding: 10px 30px;
+  border-radius: 10px;
+  text-align: center;
+  text-shadow: 0 0 5px #ff2a2a;
+  margin:30px auto;
+  width: 65%;
+}
+h1{
+      font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+  color:white;
+}
+.buttons1 button, .buttons2 button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color: #ff2a2a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.buttons1 button:hover, .buttons2 button:hover {
+    background-color: #00603d;
+}
+.reset{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color: #00a267;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.reset:hover {
+    background-color: #00603d;
+}
+.fire {
+  color: #ff3b3b;
+  text-shadow:
+    0 0 5px #ff3b3b,
+    0 0 10px #ff0000,
+    0 0 20px orange,
+    0 0 30px yellow;
+  animation: fireAnim 0.6s infinite alternate;
+}
+@keyframes fireAnim {
+  from {
+    text-shadow:
+      0 0 5px #ff3b3b,
+      0 0 10px #ff0000,
+      0 0 20px orange;
+  }
+  to {
+    text-shadow:
+      0 0 10px #ff6a00,
+      0 0 20px #ff0000,
+      0 0 30px yellow;
+  }
+}
